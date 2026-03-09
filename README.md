@@ -289,4 +289,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Credits
 
-Designed and developed by **Shubham Bhardwaj**. Feel free to fork and customize for your own portfolio!
+Designed and developed by **Om Prakash Bharadwaj**. Feel free to fork and customize for your own portfolio!
