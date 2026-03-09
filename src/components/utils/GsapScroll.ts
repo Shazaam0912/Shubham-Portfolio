@@ -36,9 +36,12 @@ export function setCharTimeline(
       invalidateOnRefresh: true,
     },
   });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let screenLight: any, monitor: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   character?.children.forEach((object: any) => {
     if (object.name === "Plane004") {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       object.children.forEach((child: any) => {
         child.material.transparent = true;
         child.material.opacity = 0;
@@ -60,6 +63,7 @@ export function setCharTimeline(
       screenLight = object;
     }
   });
+  // eslint-disable-next-line prefer-const
   let neckBone = character?.getObjectByName("spine005");
   if (window.innerWidth > 1024) {
     if (character) {

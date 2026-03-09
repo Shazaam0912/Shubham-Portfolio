@@ -1,67 +1,48 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
+import { useLanguage } from "../context/LanguageProvider";
 import "./styles/Contact.css";
 
 const Contact = () => {
+  const { data } = useLanguage();
   return (
     <div className="contact-section section-container" id="contact">
       <div className="contact-container">
-        <h3>Contact</h3>
+        <h3>{data.contact.title}</h3>
         <div className="contact-flex">
           <div className="contact-box">
-            <h4>Email</h4>
+            <h4>{data.contact.emailLabel}</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a href={`mailto:${data.contact.email}`} data-cursor="disable">
+                {data.contact.email}
               </a>
             </p>
-            <h4>Phone</h4>
+            <h4>{data.contact.phoneLabel}</h4>
             <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
+              <a href={`tel:${data.contact.phone.replace(/\s+/g, '')}`} data-cursor="disable">
+                {data.contact.phone}
               </a>
             </p>
           </div>
           <div className="contact-box">
-            <h4>Social</h4>
-            <a
-              href="https://github.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Github <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
+            <h4>{data.contact.socialLabel}</h4>
+            {data.contact.socials.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                data-cursor="disable"
+                className="contact-social"
+              >
+                {social.name} <MdArrowOutward />
+              </a>
+            ))}
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
+              {data.contact.footer.text1} <br /> {data.contact.footer.text2} <span>{data.contact.footer.name}</span>
             </h2>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> {data.contact.footer.year}
             </h5>
           </div>
         </div>

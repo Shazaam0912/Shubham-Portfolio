@@ -1,16 +1,19 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { useLanguage } from "../context/LanguageProvider";
+import { setSmoother, smoother } from "./utils/smoother";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
 
 const Navbar = () => {
-  useEffect(() => {
-    smoother = ScrollSmoother.create({
+  const { data, language, setLanguage } = useLanguage();
+
+  useLayoutEffect(() => {
+    const s = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
       smooth: 1.7,
@@ -19,18 +22,19 @@ const Navbar = () => {
       autoResize: true,
       ignoreMobileResize: true,
     });
+    setSmoother(s);
 
-    smoother.scrollTop(0);
-    smoother.paused(true);
+    s.scrollTop(0);
+    s.paused(true);
 
-    let links = document.querySelectorAll(".header ul a");
+    const links = document.querySelectorAll(".header ul a");
     links.forEach((elem) => {
-      let element = elem as HTMLAnchorElement;
+      const element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
         if (window.innerWidth > 1024) {
           e.preventDefault();
-          let elem = e.currentTarget as HTMLAnchorElement;
-          let section = elem.getAttribute("data-href");
+          const elem = e.currentTarget as HTMLAnchorElement;
+          const section = elem.getAttribute("data-href");
           smoother.scrollTo(section, true, "top top");
         }
       });
@@ -43,31 +47,42 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          {data.navbar.logo}
         </a>
-        <a
-          href="mailto:example@mail.com"
-          className="navbar-connect"
-          data-cursor="disable"
-        >
-          example@mail.com
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <a
+            href={`mailto:${data.navbar.email}`}
+            className="navbar-connect"
+            data-cursor="disable"
+          >
+            {data.navbar.email}
+          </a>
+          <button
+            onClick={() => setLanguage(language === "en" ? "ja" : "en")}
+            style={{
+              background: 'transparent',
+              border: '1px solid white',
+              color: 'white',
+              padding: '4px 8px',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              zIndex: 100,
+              pointerEvents: 'auto'
+            }}
+            data-cursor="disable"
+          >
+            {language === "en" ? "JA" : "EN"}
+          </button>
+        </div>
         <ul>
-          <li>
-            <a data-href="#about" href="#about">
-              <HoverLinks text="ABOUT" />
-            </a>
-          </li>
-          <li>
-            <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
-            </a>
-          </li>
-          <li>
-            <a data-href="#contact" href="#contact">
-              <HoverLinks text="CONTACT" />
-            </a>
-          </li>
+          {data.navbar.links.map((link, index) => (
+            <li key={index}>
+              <a data-href={link.href} href={link.href}>
+                <HoverLinks text={link.text} />
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
 

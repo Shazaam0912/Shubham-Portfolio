@@ -27,6 +27,7 @@ const setLighting = (scene: THREE.Scene) => {
       scene.environmentRotation.set(5.76, 85.85, 1);
     });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function setPointLight(screenLight: any) {
     if (screenLight.material.opacity > 0.9) {
       pointLight.intensity = screenLight.material.emissiveIntensity * 20;

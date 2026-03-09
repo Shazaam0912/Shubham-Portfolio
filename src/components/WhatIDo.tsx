@@ -1,15 +1,18 @@
 import { useEffect, useRef } from "react";
+import { useLanguage } from "../context/LanguageProvider";
 import "./styles/WhatIDo.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const WhatIDo = () => {
+  const { data } = useLanguage();
   const containerRef = useRef<(HTMLDivElement | null)[]>([]);
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
   };
   useEffect(() => {
+    const containers = containerRef.current;
     if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
+      containers.forEach((container) => {
         if (container) {
           container.classList.remove("what-noTouch");
           container.addEventListener("click", () => handleClick(container));
@@ -17,7 +20,7 @@ const WhatIDo = () => {
       });
     }
     return () => {
-      containerRef.current.forEach((container) => {
+      containers.forEach((container) => {
         if (container) {
           container.removeEventListener("click", () => handleClick(container));
         }
@@ -28,9 +31,9 @@ const WhatIDo = () => {
     <div className="whatIDO">
       <div className="what-box">
         <h2 className="title">
-          W<span className="hat-h2">HAT</span>
+          {data.whatido.title1}<span className="hat-h2">{data.whatido.title2}</span>
           <div>
-            I<span className="do-h2"> DO</span>
+            {data.whatido.title3}<span className="do-h2">{data.whatido.title4}</span>
           </div>
         </h2>
       </div>
@@ -87,24 +90,16 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h3>{data.whatido.cards[0].title}</h3>
+              <h4>{data.whatido.cards[0].descriptionLabel}</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                {data.whatido.cards[0].description}
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>{data.whatido.cards[0].skillsLabel}</h5>
               <div className="what-content-flex">
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Next.js</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                {data.whatido.cards[0].skills.map((skill, index) => (
+                  <div className="what-tags" key={index}>{skill}</div>
+                ))}
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -128,22 +123,16 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h3>{data.whatido.cards[1].title}</h3>
+              <h4>{data.whatido.cards[1].descriptionLabel}</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                {data.whatido.cards[1].description}
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>{data.whatido.cards[1].skillsLabel}</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                {data.whatido.cards[1].skills.map((skill, index) => (
+                  <div className="what-tags" key={index}>{skill}</div>
+                ))}
               </div>
               <div className="what-arrow"></div>
             </div>

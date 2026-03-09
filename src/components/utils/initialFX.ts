@@ -1,6 +1,6 @@
-import { SplitText } from "gsap-trial/SplitText";
+import { SplitText } from "gsap/SplitText";
 import gsap from "gsap";
-import { smoother } from "../Navbar";
+import { smoother } from "./smoother";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
@@ -12,7 +12,26 @@ export function initialFX() {
     delay: 1,
   });
 
-  var landingText = new SplitText(
+  gsap.fromTo(
+    [".header", ".icons-section", ".nav-fade"],
+    { opacity: 0 },
+    {
+      opacity: 1,
+      duration: 1.2,
+      ease: "power1.inOut",
+      delay: 0.1,
+    }
+  );
+
+  animateLandingText();
+}
+
+let activeTimelines: gsap.core.Timeline[] = [];
+export function animateLandingText() {
+  activeTimelines.forEach((tl) => tl.kill());
+  activeTimelines = [];
+
+  const landingText = new SplitText(
     [".landing-info h3", ".landing-intro h2", ".landing-intro h1"],
     {
       type: "chars,lines",
@@ -33,9 +52,9 @@ export function initialFX() {
     }
   );
 
-  let TextProps = { type: "chars,lines", linesClass: "split-h2" };
+  const TextProps = { type: "chars,lines", linesClass: "split-h2" };
 
-  var landingText2 = new SplitText(".landing-h2-info", TextProps);
+  const landingText2 = new SplitText(".landing-h2-info", TextProps);
   gsap.fromTo(
     landingText2.chars,
     { opacity: 0, y: 80, filter: "blur(5px)" },
@@ -61,27 +80,18 @@ export function initialFX() {
       delay: 0.8,
     }
   );
-  gsap.fromTo(
-    [".header", ".icons-section", ".nav-fade"],
-    { opacity: 0 },
-    {
-      opacity: 1,
-      duration: 1.2,
-      ease: "power1.inOut",
-      delay: 0.1,
-    }
-  );
 
-  var landingText3 = new SplitText(".landing-h2-info-1", TextProps);
-  var landingText4 = new SplitText(".landing-h2-1", TextProps);
-  var landingText5 = new SplitText(".landing-h2-2", TextProps);
+  const landingText3 = new SplitText(".landing-h2-info-1", TextProps);
+  const landingText4 = new SplitText(".landing-h2-1", TextProps);
+  const landingText5 = new SplitText(".landing-h2-2", TextProps);
 
-  LoopText(landingText2, landingText3);
-  LoopText(landingText4, landingText5);
+  activeTimelines.push(LoopText(landingText2, landingText3));
+  activeTimelines.push(LoopText(landingText4, landingText5));
 }
 
-function LoopText(Text1: SplitText, Text2: SplitText) {
-  var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function LoopText(Text1: any, Text2: any) {
+  const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
   const delay = 4;
   const delay2 = delay * 2 + 1;
 
@@ -133,4 +143,5 @@ function LoopText(Text1: SplitText, Text2: SplitText) {
       },
       1
     );
+  return tl;
 }

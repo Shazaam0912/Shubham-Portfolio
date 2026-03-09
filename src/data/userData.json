@@ -1,0 +1,236 @@
+{
+  "en": {
+    "navbar": {
+      "logo": "Logo",
+      "email": "shubhambdj04@gmail.com",
+      "links": [
+        { "text": "ABOUT", "href": "#about" },
+        { "text": "WORK", "href": "#work" },
+        { "text": "CONTACT", "href": "#contact" }
+      ]
+    },
+    "landing": {
+      "intro1": "Hello! I'm",
+      "firstName": "SHUBHAM",
+      "lastName": "BHARDWAJ",
+      "info1": "A Versatile",
+      "roles": ["Data Analyst", "Developer"]
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am a 21-year-old developer and data enthusiast based in Bangalore, India, with a BBA in Data & Finance from St. Joseph's University. I combine a strong business foundation with technical expertise in AI, Data Science, and software development to build innovative solutions like AI-powered platforms and language learning tools."
+    },
+    "career": {
+      "title1": "My career",
+      "title2": "&",
+      "title3": "experience",
+      "timeline": [
+        {
+          "role": "BBA Data & Finance",
+          "company": "St. Joseph’s University",
+          "year": "2022",
+          "description": "Graduated with a focus on Data and Finance. Built a strong foundation in business administration while exploring data analytics and emerging technologies."
+        },
+        {
+          "role": "Sales & Content Creator",
+          "company": "Legacy Closet India",
+          "year": "2023",
+          "description": "Created and edited promotional videos for anime merchandise. Managed social media marketing campaigns and directly assisted in sales and customer engagement."
+        },
+        {
+          "role": "R&D Intern",
+          "company": "Elior India",
+          "year": "2024",
+          "description": "Conducted extensive market research and industry analysis. Supported data collection for business insights and assisted in innovation and service development projects."
+        }
+      ]
+    },
+    "work": {
+      "title1": "My",
+      "title2": "Work",
+      "toolsLabel": "Tools and features",
+      "projects": [
+        {
+          "name": "TalkyToki",
+          "category": "Language Learning Application",
+          "tools": "AI, Extension, Streaming Integration",
+          "desc": "Browser extension based language learning platform enabling learning languages while watching videos. Includes AI-based conversation with creators."
+        },
+        {
+          "name": "Agentic PM System",
+          "category": "Cardano Asia IBW Hackathon",
+          "tools": "AI, Blockchain, Smart Contracts",
+          "desc": "An AI-powered project management solution built with AI and Blockchain technology, developed as a team collaboration project."
+        },
+        {
+          "name": "Portfolio Website",
+          "category": "Personal Portfolio",
+          "tools": "React, GSAP, Three.js",
+          "desc": "Personal website demonstrating technical capabilities, professional experience, and creative design skills."
+        }
+      ]
+    },
+    "whatido": {
+      "title1": "W",
+      "title2": "HAT",
+      "title3": "I",
+      "title4": " DO",
+      "cards": [
+        {
+          "title": "DATA & AI",
+          "descriptionLabel": "Description",
+          "description": "Leveraging data analysis, machine learning algorithms, and AI tools to drive business insights and build intelligent, automated solutions.",
+          "skillsLabel": "Certifications & Skills",
+          "skills": ["OCI AI Foundations", "OCI Data Science Pro", "Python", "SQL", "Machine Learning", "Data Analysis", "Market Research"]
+        },
+        {
+          "title": "SOFTWARE DEV",
+          "descriptionLabel": "Description",
+          "description": "Developing fast, interactive web applications and browser extensions using modern libraries, blockchain technologies, and smart contracts.",
+          "skillsLabel": "Technologies & Languages",
+          "skills": ["React", "TypeScript", "Node.js", "Three.js", "Blockchain", "Web3", "Browser Exts", "Japanese (JLPT)"]
+        }
+      ]
+    },
+    "techstack": {
+      "title": "My Techstack"
+    },
+    "contact": {
+      "title": "Contact",
+      "emailLabel": "Email",
+      "email": "shubhambdj04@gmail.com",
+      "phoneLabel": "Phone",
+      "phone": "+91 78924 91109",
+      "socialLabel": "Social",
+      "socials": [
+        { "name": "Github", "url": "https://github.com" },
+        { "name": "Linkedin", "url": "https://www.linkedin.com" },
+        { "name": "Twitter", "url": "https://x.com" },
+        { "name": "Instagram", "url": "https://www.instagram.com" }
+      ],
+      "footer": {
+        "text1": "Designed and Developed",
+        "text2": "by",
+        "name": "Shubham Bhardwaj",
+        "year": "2025"
+      }
+    }
+  },
+  "ja": {
+    "navbar": {
+      "logo": "Logo",
+      "email": "shubhambdj04@gmail.com",
+      "links": [
+        { "text": "アバウト", "href": "#about" },
+        { "text": "ワーク", "href": "#work" },
+        { "text": "コンタクト", "href": "#contact" }
+      ]
+    },
+    "landing": {
+      "intro1": "こんにちは！",
+      "firstName": "SHUBHAM",
+      "lastName": "BHARDWAJ",
+      "info1": "多彩な",
+      "roles": ["データアナリスト", "開発者"]
+    },
+    "about": {
+      "title": "私について",
+      "description": "私はインドのバンガロールを拠点とする21歳の開発者兼データ愛好家で、セントジョセフ大学でデータと金融のBBAを取得しています。 強力なビジネス基盤と、AI、データサイエンス、ソフトウェア開発の技術的専門知識を組み合わせて、AIを活用したプラットフォームや言語学習ツールなどの革新的なソリューションを構築しています。"
+    },
+    "career": {
+      "title1": "キャリア",
+      "title2": "＆",
+      "title3": "経験",
+      "timeline": [
+        {
+          "role": "BBA データ＆ファイナンス",
+          "company": "セントジョセフ大学",
+          "year": "2022",
+          "description": "データと金融に重点を置いて卒業。 ビジネス管理の強固な基盤を構築し、データ分析や新しいテクノロジーを探求しました。"
+        },
+        {
+          "role": "セールス＆コンテンツクリエイター",
+          "company": "Legacy Closet India",
+          "year": "2023",
+          "description": "アニメグッズのプロモーション動画を作成および編集しました。 ソーシャルメディアのマーケティングキャンペーンを管理し、売上や顧客エンゲージメントを直接支援しました。"
+        },
+        {
+          "role": "R&D インターン",
+          "company": "Elior India",
+          "year": "2024",
+          "description": "広範な市場調査と業界分析を実施しました。 ビジネスインサイトのためのデータ収集を支援し、革新およびサービス開発プロジェクトを支援しました。"
+        }
+      ]
+    },
+    "work": {
+      "title1": "私の",
+      "title2": "仕事",
+      "toolsLabel": "ツールと機能",
+      "projects": [
+        {
+          "name": "TalkyToki",
+          "category": "言語学習アプリケーション",
+          "tools": "AI, 拡張機能, ストリーミング統合",
+          "desc": "動画を見ながら言語を学習できるブラウザ拡張機能ベースの言語学習プラットフォーム。 クリエイターとのAIベースの会話を含みます。"
+        },
+        {
+          "name": "Agentic PM System",
+          "category": "Cardano Asia IBW ハッカソン",
+          "tools": "AI, ブロックチェーン, スマートコントラクト",
+          "desc": "チームコラボレーションプロジェクトとして開発された、AIとブロックチェーン技術で構築されたAI対応プロジェクト管理ソリューション。"
+        },
+        {
+          "name": "ポートフォリオウェブサイト",
+          "category": "個人ポートフォリオ",
+          "tools": "React, GSAP, Three.js",
+          "desc": "技術的能力、職業経験、創造的なデザインスキルを示す個人のウェブサイト。"
+        }
+      ]
+    },
+    "whatido": {
+      "title1": "W",
+      "title2": "HAT",
+      "title3": "I",
+      "title4": " DO",
+      "cards": [
+        {
+          "title": "データ＆AI",
+          "descriptionLabel": "説明",
+          "description": "データ分析、機械学習アルゴリズム、AIツールを活用してビジネスインサイトを促進し、インテリジェントで自動化されたソリューションを構築します。",
+          "skillsLabel": "資格とスキル",
+          "skills": ["OCI AI Foundations", "OCI Data Science Pro", "Python", "SQL", "機械学習", "データ分析", "市場調査"]
+        },
+        {
+          "title": "ソフトウェア開発",
+          "descriptionLabel": "説明",
+          "description": "最新のライブラリ、ブロックチェーンテクノロジー、スマートコントラクトを使用して、高速でインタラクティブなWebアプリケーションとブラウザ拡張機能を開発します。",
+          "skillsLabel": "テクノロジーとプログラミング言語",
+          "skills": ["React", "TypeScript", "Node.js", "Three.js", "ブロックチェーン", "Web3", "ブラウザ拡張機能", "日本語 (JLPT)"]
+        }
+      ]
+    },
+    "techstack": {
+      "title": "私の技術スタック"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "emailLabel": "メール",
+      "email": "shubhambdj04@gmail.com",
+      "phoneLabel": "電話番号",
+      "phone": "+91 78924 91109",
+      "socialLabel": "ソーシャル",
+      "socials": [
+        { "name": "Github", "url": "https://github.com" },
+        { "name": "Linkedin", "url": "https://www.linkedin.com" },
+        { "name": "Twitter", "url": "https://x.com" },
+        { "name": "Instagram", "url": "https://www.instagram.com" }
+      ],
+      "footer": {
+        "text1": "デザイン・開発",
+        "text2": "作成者：",
+        "name": "Shubham Bhardwaj",
+        "year": "2025"
+      }
+    }
+  }
+}
