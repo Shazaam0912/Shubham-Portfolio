@@ -1,0 +1,444 @@
+/* ─── Projects Section ─────────────────────────────────────────────────────── */
+
+.projects-section {
+  width: 100%;
+  background-color: var(--backgroundColor);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 120px;
+}
+
+/* Subtle noise texture overlay */
+.projects-section::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* ─── Section Header ─────────────────────────────────────────────────────────── */
+
+.projects-header {
+  width: 100%;
+  padding: 120px 0 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.projects-header-inner {
+  text-align: center;
+  max-width: 700px;
+  padding: 0 24px;
+}
+
+.projects-header-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+
+.projects-header-title {
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 20px;
+  letter-spacing: -0.03em;
+  color: #eae5ec;
+}
+
+.projects-header-accent {
+  color: var(--accentColor);
+  font-style: italic;
+}
+
+.projects-header-sub {
+  font-size: 16px;
+  color: #666;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ─── Project List ─────────────────────────────────────────────────────────── */
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Project Row ──────────────────────────────────────────────────────────── */
+
+.proj-row {
+  position: relative;
+  padding: 80px 0;
+  border-top: 1px solid #1a1a1a;
+}
+
+.proj-row:last-child {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.proj-row-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform-origin: left;
+}
+
+.proj-row-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 600px;
+}
+
+/* ─── Media Panel ──────────────────────────────────────────────────────────── */
+
+.proj-media-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-media-card {
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.proj-media-card-inner {
+  border-radius: 20px;
+  border: 1px solid;
+  overflow: hidden;
+  background: #111;
+  aspect-ratio: 16 / 10;
+  position: relative;
+  box-shadow:
+    0 0 0 1px #ffffff08,
+    0 20px 60px #00000080,
+    0 40px 100px #00000040;
+}
+
+.proj-media-glow {
+  position: absolute;
+  inset: -40px;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.proj-index-badge {
+  position: absolute;
+  top: -24px;
+  left: -16px;
+  font-size: 120px;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.06;
+  letter-spacing: -0.05em;
+  pointer-events: none;
+  user-select: none;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ─── YouTube Embed ────────────────────────────────────────────────────────── */
+
+.proj-yt-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.proj-yt-thumb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.proj-yt-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: brightness(0.75);
+}
+
+.proj-yt-thumb:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.6);
+}
+
+.proj-yt-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.6));
+}
+
+.proj-yt-thumb:hover .proj-yt-play-btn {
+  transform: translate(-50%, -50%) scale(1.15);
+  opacity: 1;
+}
+
+.proj-yt-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ─── Image Carousel ───────────────────────────────────────────────────────── */
+
+.proj-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.proj-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.proj-carousel-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.proj-carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.proj-carousel-dot.active {
+  transform: scale(1.4);
+}
+
+/* ─── Description Panel ────────────────────────────────────────────────────── */
+
+.proj-desc-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.proj-desc-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proj-desc-tag {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+
+.proj-desc-title {
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -0.03em;
+  color: #eae5ec;
+}
+
+.proj-desc-title-accent {
+  font-style: italic;
+}
+
+.proj-desc-subtitle {
+  font-size: 16px;
+  color: #888;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.proj-desc-year {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* ─── Description Sections ─────────────────────────────────────────────────── */
+
+.proj-desc-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.proj-desc-section {
+  padding: 20px 0;
+  border-top: 1px solid #1e1e1e;
+}
+
+.proj-desc-section:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.proj-desc-section-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.proj-desc-section-num {
+  font-size: 10px;
+  opacity: 0.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.proj-desc-section-text {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.8;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ─── Link Button ──────────────────────────────────────────────────────────── */
+
+.proj-desc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 12px 24px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  align-self: flex-start;
+}
+
+/* ─── Decorative Line ──────────────────────────────────────────────────────── */
+
+.proj-desc-line {
+  height: 1px;
+  width: 100%;
+  transform-origin: left;
+  margin-top: 8px;
+}
+
+/* ─── Even Row (flip) ──────────────────────────────────────────────────────── */
+
+/* Even rows already handled by JSX order swap */
+
+/* ─── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 1100px) {
+  .proj-row-inner {
+    padding: 0 40px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .proj-row-inner {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+    gap: 40px;
+    min-height: unset;
+  }
+
+  .proj-row {
+    padding: 60px 0;
+  }
+
+  /* On mobile, always show media first */
+  .proj-row--even .proj-desc-panel {
+    order: 2;
+  }
+  .proj-row--even .proj-media-panel {
+    order: 1;
+  }
+
+  .proj-index-badge {
+    font-size: 80px;
+    top: -16px;
+    left: -8px;
+  }
+
+  .projects-header {
+    padding: 80px 0 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .proj-row-inner {
+    padding: 0 16px;
+    gap: 32px;
+  }
+
+  .proj-desc-title {
+    font-size: 32px;
+  }
+
+  .projects-header-title {
+    font-size: 48px;
+  }
+}

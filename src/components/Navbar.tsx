@@ -5,12 +5,14 @@ import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useLanguage } from "../context/LanguageProvider";
 import { setSmoother, smoother } from "./utils/smoother";
+import { useNavigate } from "react-router-dom";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
 const Navbar = () => {
   const { data, language, setLanguage } = useLanguage();
+  const navigate = useNavigate();
 
   useLayoutEffect(() => {
     const s = ScrollSmoother.create({
@@ -46,9 +48,14 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          {data.navbar.logo}
-        </a>
+        <button
+          className="navbar-certs-btn"
+          onClick={() => navigate("/certifications")}
+          data-cursor="disable"
+        >
+          <span className="navbar-certs-icon">✦</span>
+          {language === "en" ? "Certifications" : "資格"}
+        </button>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
           <a
             href={`mailto:${data.navbar.email}`}

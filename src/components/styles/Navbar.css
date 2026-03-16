@@ -45,6 +45,43 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+
+/* Certifications button — replaces logo placeholder */
+.navbar-certs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #c2a4ff;
+  background: rgba(194, 164, 255, 0.08);
+  border: 1px solid rgba(194, 164, 255, 0.28);
+  padding: 8px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.navbar-certs-btn:hover {
+  background: rgba(194, 164, 255, 0.16);
+  border-color: rgba(194, 164, 255, 0.5);
+  color: #d8c4ff;
+}
+
+.navbar-certs-icon {
+  font-size: 10px;
+  opacity: 0.8;
+  animation: certs-spin 6s linear infinite;
+}
+
+@keyframes certs-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;

@@ -13,10 +13,18 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>(() => {
+    const stored = localStorage.getItem("portfolio-lang");
+    return (stored === "ja" ? "ja" : "en") as Language;
+  });
+
+  const handleSetLanguage = (lang: Language) => {
+    localStorage.setItem("portfolio-lang", lang);
+    setLanguage(lang);
+  };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, data: userData[language] }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, data: userData[language] }}>
       {children}
     </LanguageContext.Provider>
   );

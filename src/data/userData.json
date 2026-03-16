@@ -6,6 +6,7 @@
       "links": [
         { "text": "ABOUT", "href": "#about" },
         { "text": "WORK", "href": "#work" },
+        { "text": "PROJECTS", "href": "#projects" },
         { "text": "CONTACT", "href": "#contact" }
       ]
     },
@@ -27,21 +28,39 @@
       "timeline": [
         {
           "role": "BBA Data & Finance",
-          "company": "St. Joseph’s University",
-          "year": "2022",
-          "description": "Graduated with a focus on Data and Finance. Built a strong foundation in business administration while exploring data analytics and emerging technologies."
+          "company": "St. Joseph's University",
+          "year": "2022–25",
+          "description": "Graduated with a specialization in Data & Finance. Completed a university-certified Data Science & Analytics course (Grade B, 3 credits). Built a strong foundation in business administration, statistical analysis, and financial modeling while actively exploring AI, machine learning, and software development."
         },
         {
           "role": "Sales & Content Creator",
           "company": "Legacy Closet India",
           "year": "2023",
-          "description": "Created and edited promotional videos for anime merchandise. Managed social media marketing campaigns and directly assisted in sales and customer engagement."
+          "description": "Created and edited promotional video content for anime merchandise, driving brand awareness across social platforms. Managed end-to-end social media marketing campaigns, directly contributing to sales growth and customer engagement. Developed skills in visual storytelling, audience targeting, and content strategy."
         },
         {
           "role": "R&D Intern",
           "company": "Elior India",
           "year": "2024",
-          "description": "Conducted extensive market research and industry analysis. Supported data collection for business insights and assisted in innovation and service development projects."
+          "description": "Conducted extensive market research and competitive industry analysis to support strategic business decisions. Assisted in data collection, cleaning, and synthesis for actionable business insights. Contributed to innovation and service development projects, applying data-driven thinking to real-world operational challenges."
+        },
+        {
+          "role": "Hackathon top 5  WorkOrbit",
+          "company": "Cardano Asia IBW 2025",
+          "year": "2025",
+          "description": "Built WorkOrbit from scratch in a 30-hour sprint at Cardano Hackathon Asia IBW 2025 with Team KERDS. Designed and implemented a decentralized AI workflow agent integrating LLMs, FastAPI, Kafka, IPFS, and Plutus smart contracts on the Cardano blockchain. Delivered a fully functional demo 30 minutes before the deadline — winning the hackathon."
+        },
+        {
+          "role": "Oracle Certified AI & Data Science",
+          "company": "Oracle University",
+          "year": "2025",
+          "description": "Earned dual Oracle Cloud Infrastructure certifications: OCI 2025 AI Foundations Associate and OCI 2025 Data Science Professional. Demonstrates enterprise-level expertise in cloud AI architecture, ML lifecycle management, MLOps, and production deployment of AI solutions on OCI."
+        },
+        {
+          "role": "Solo Developer Talytoki",
+          "company": "Independent Project",
+          "year": "2025",
+          "description": "Designed and built Talytoki — an AI-powered browser extension for immersive language learning. Features hover-to-learn dictionary, JLPT-tagged vocabulary saving, dual subtitles, and an AI persona that lets users converse with video creators. Directly motivated by my own JLPT N5 certification journey."
         }
       ]
     },
@@ -51,22 +70,28 @@
       "toolsLabel": "Tools and features",
       "projects": [
         {
-          "name": "TalkyToki",
-          "category": "Language Learning Application",
-          "tools": "AI, Extension, Streaming Integration",
-          "desc": "Browser extension based language learning platform enabling learning languages while watching videos. Includes AI-based conversation with creators."
+          "name": "Talytoki",
+          "category": "AI · Language Learning · Browser Extension",
+          "tools": "React, AI/LLM, Chrome Extension, YouTube API, JLPT N5–N1",
+          "desc": "AI-powered browser extension for immersive Japanese learning. Hover-to-learn dictionary, JLPT-tagged vocabulary saving, dual subtitles, and an AI persona that lets you converse with video creators — all without leaving the video."
         },
         {
-          "name": "Agentic PM System",
-          "category": "Cardano Asia IBW Hackathon",
-          "tools": "AI, Blockchain, Smart Contracts",
-          "desc": "An AI-powered project management solution built with AI and Blockchain technology, developed as a team collaboration project."
+          "name": "Stock Prediction",
+          "category": "Data Science · Time Series · R",
+          "tools": "R, ARIMA, Moving Average, Exponential Smoothing, ggplot2",
+          "desc": "Rigorous time-series forecasting of Tata Steel stock prices using ARIMA, Moving Average, and Exponential Smoothing models. Evaluated with RMSE and MAE metrics — ARIMA emerged as the strongest short-term predictor."
         },
         {
-          "name": "Portfolio Website",
-          "category": "Personal Portfolio",
-          "tools": "React, GSAP, Three.js",
-          "desc": "Personal website demonstrating technical capabilities, professional experience, and creative design skills."
+          "name": "Parallel Universe",
+          "category": "Brand Design · Streetwear · Creative Direction",
+          "tools": "Adobe Illustrator, Graphic Design, Brand Identity, Visual Storytelling",
+          "desc": "Personal streetwear brand concept fusing Indian street culture, anime, JDM car culture, basketball, and skateboarding into a cohesive visual identity. A wearable manifesto of personal expression."
+        },
+        {
+          "name": "WorkOrbit",
+          "category": "Hackathon Winner · AI · Blockchain",
+          "tools": "AI/LLM, Cardano Blockchain, FastAPI, Kafka, IPFS, Plutus Smart Contracts",
+          "desc": "Hackathon-winning decentralized AI workflow agent built in 30 hours. Automates task assignments via meeting STT, tracks deadlines in real-time, and verifies completion on the Cardano blockchain with tamper-proof Plutus smart contracts."
         }
       ]
     },
@@ -114,6 +139,120 @@
         "name": "Shubham Bhardwaj",
         "year": "2025"
       }
+    },
+    "projectDetail": {
+      "backLabel": "Portfolio",
+      "yearLabel": "Year",
+      "roleLabel": "Role",
+      "statusLabel": "Status",
+      "moreProjects": "More Projects",
+      "closeLabel": "Close",
+      "clickToPlay": "Click to play",
+      "projects": {
+        "talytoki": {
+          "title": "Talytoki",
+          "subtitle": "Immersive Language Learning Platform",
+          "tag": "Browser Extension · AI · Streaming",
+          "role": "Solo Developer",
+          "status": "Live",
+          "linkLabel": "Watch Demo",
+          "headings": [
+            {
+              "label": "The Problem",
+              "content": "The 'Scattered Learning' Trap — As I'm learning Japanese, I constantly ran into the same frustrating roadblock: information is just too scattered. I'd watch a video, hear an interesting word, pause the video, scramble through my notes or open a dictionary app to find the meaning, and by the time I got back to the video, the immersion was completely broken."
+            },
+            {
+              "label": "The Vision",
+              "content": "Imagine if you could learn while watching your favorite shows, without ever needing to look away or check your notes. What if everything you needed to understand the language was right there on the screen? That's exactly why I built Talytoki — a single, centralized platform where you can watch videos from YouTube, Netflix, and other streaming sites, while seamlessly learning and saving new vocabulary and grammar in real-time."
+            },
+            {
+              "label": "Core Features",
+              "content": "Hover-to-Learn Dictionary: Watch with dual subtitles — hover over any word to instantly see meaning, pronunciation, and grammar. Smart Vocabulary Saving: Click to save words directly from the video; Talytoki highlights them automatically in future videos. JLPT Level Tagging (N5–N1): Automatically categorizes saved vocabulary by proficiency level. Active Practice Controls: Loop specific sentences or auto-pause after every line. 'Talk to the Creator' AI: After watching, a built-in AI adopts the persona of that video's creator for real-time conversation practice."
+            },
+            {
+              "label": "Impact",
+              "content": "Talytoki transforms passive video watching into an active, immersive language acquisition experience. By eliminating the need to context-switch between apps, learners stay in the flow state that is critical for language retention. The JLPT tagging system ensures learners always know what to prioritize, making the path from N5 to N1 feel structured and achievable."
+            }
+          ]
+        },
+        "stock-prediction": {
+          "title": "Stock Prediction",
+          "subtitle": "Time-Series Forecasting — Tata Steel",
+          "tag": "Data Science · Time Series · R",
+          "role": "Data Scientist",
+          "status": "Completed",
+          "linkLabel": "View on LinkedIn",
+          "headings": [
+            {
+              "label": "Objectives",
+              "content": "Collect historical stock data of Tata Steel from financial data sources. Perform data cleaning, preprocessing, and exploratory data analysis. Apply time-series forecasting models to analyze stock price behavior. Predict future stock price movements based on historical trends."
+            },
+            {
+              "label": "Models Used",
+              "content": "Moving Average (MA) — to smooth short-term fluctuations in stock prices. AutoRegressive (AR) — to model relationships between current and past prices. ARIMA (AutoRegressive Integrated Moving Average) — used as the main forecasting model for predicting future prices. Exponential Smoothing — to capture trends and improve forecasting accuracy."
+            },
+            {
+              "label": "Methodology",
+              "content": "The project followed a rigorous data science pipeline: raw historical data was sourced, cleaned, and normalized before being fed into multiple competing models. Each model's performance was evaluated using RMSE and MAE metrics, with ARIMA emerging as the strongest performer for short-term prediction windows."
+            },
+            {
+              "label": "End Goal",
+              "content": "Build a predictive model capable of forecasting short-term stock price movements using historical data and statistical time-series techniques. The project demonstrates the application of financial data analysis, forecasting models, and R programming for analyzing market behavior and supporting investment decision-making."
+            }
+          ]
+        },
+        "parallel-universe": {
+          "title": "Parallel Universe",
+          "subtitle": "Personal Streetwear Brand Concept",
+          "tag": "Design · Streetwear · Brand Identity",
+          "role": "Designer & Creative Director",
+          "status": "Ongoing",
+          "headings": [
+            {
+              "label": "The Concept",
+              "content": "Parallel Universe is a personal clothing brand concept that I created out of my passion for design, creativity, and street culture. I have always wanted to build my own brand someday, and this project allowed me to explore that dream by turning my interests into visual designs."
+            },
+            {
+              "label": "Inspiration",
+              "content": "The brand is heavily inspired by the energy of Indian streetwear culture and the creative freedom it represents. Through this project, I experimented with graphics and concepts that reflect my personal interests — including anime, JDM car culture, basketball, and skateboarding."
+            },
+            {
+              "label": "Design Philosophy",
+              "content": "Rather than just designing clothing, the goal of Parallel Universe was to create a space where all the things I love could coexist visually. Each design represents a part of my personality and the cultures that influence me — a wearable manifesto of identity."
+            },
+            {
+              "label": "Outcome",
+              "content": "This project started as a hobby, but it also became a way for me to express my creativity and explore how art, fashion, and personal interests can come together to form a unique brand identity. It sharpened my eye for composition, color theory, and visual storytelling."
+            }
+          ]
+        },
+        "workorbit": {
+          "title": "WorkOrbit",
+          "subtitle": "Decentralized AI Workflow Agent",
+          "tag": "AI · Blockchain · Cardano · Hackathon",
+          "role": "Full-Stack Developer",
+          "status": "Hackathon Winner",
+          "linkLabel": "Watch Demo",
+          "headings": [
+            {
+              "label": "The Problem",
+              "content": "Modern team collaboration is broken. Many teams struggle with inefficient task tracking, poor deadline management, and a lack of transparent accountability. Existing web2 project management tools lack the trust, traceability, and tamper-proof records necessary for high-stakes collaboration."
+            },
+            {
+              "label": "The Solution",
+              "content": "WorkOrbit is a decentralized AI Workflow Agent that automates task assignments, tracks deadlines in real-time, and verifies task completion. By integrating AI automation with the Cardano blockchain, we created a fully auditable, tamper-proof system for ultimate team accountability. Key features: Meeting STT-to-Action (AI listens during meetings and instantly creates role-based tasks), Intelligent Task Assignment, AI-Powered Verification, and an Immutable Trust Layer on Cardano."
+            },
+            {
+              "label": "Technical Architecture",
+              "content": "Frontend: React/Flutter dashboard. Backend & API Gateway: FastAPI for complex agentic endpoints. AI Agent Engine: LLM + Task Manager for reasoning and scheduling. Middleware: Node.js/Python processors with Kafka and Redis for real-time event queuing. Data Storage (Web3): Encrypted payloads on IPFS; critical state changes managed by Plutus Smart Contracts on the Cardano Blockchain."
+            },
+            {
+              "label": "The Hackathon Crucible",
+              "content": "Built from scratch in a grueling 30-hour sprint at Cardano Hackathon Asia IBW 2025 with Team KERDS. We faced a 'cold start' disadvantage (zero preparation), complex API orchestration challenges, and first-time Web3 integration — all while battling severe sleep deprivation. We pushed our final submission just 30 minutes before the deadline."
+            }
+          ]
+        }
+      }
     }
   },
   "ja": {
@@ -123,6 +262,7 @@
       "links": [
         { "text": "アバウト", "href": "#about" },
         { "text": "ワーク", "href": "#work" },
+        { "text": "プロジェクト", "href": "#projects" },
         { "text": "コンタクト", "href": "#contact" }
       ]
     },
@@ -145,20 +285,38 @@
         {
           "role": "BBA データ＆ファイナンス",
           "company": "セントジョセフ大学",
-          "year": "2022",
-          "description": "データと金融に重点を置いて卒業。 ビジネス管理の強固な基盤を構築し、データ分析や新しいテクノロジーを探求しました。"
+          "year": "2022–2025",
+          "description": "データ＆ファイナンス専攻で卒業。大学認定のデータサイエンス＆アナリティクスコースを修了（Bグレード、3単位）。ビジネス管理、統計分析、財務モデリングの強固な基盤を構築しながら、AI、機械学習、ソフトウェア開発を積極的に探求しました。"
         },
         {
           "role": "セールス＆コンテンツクリエイター",
           "company": "Legacy Closet India",
           "year": "2023",
-          "description": "アニメグッズのプロモーション動画を作成および編集しました。 ソーシャルメディアのマーケティングキャンペーンを管理し、売上や顧客エンゲージメントを直接支援しました。"
+          "description": "アニメグッズのプロモーション動画コンテンツを作成・編集し、ソーシャルプラットフォームでのブランド認知度を向上させました。エンドツーエンドのソーシャルメディアマーケティングキャンペーンを管理し、売上成長と顧客エンゲージメントに直接貢献。ビジュアルストーリーテリング、オーディエンスターゲティング、コンテンツ戦略のスキルを習得しました。"
         },
         {
           "role": "R&D インターン",
           "company": "Elior India",
           "year": "2024",
-          "description": "広範な市場調査と業界分析を実施しました。 ビジネスインサイトのためのデータ収集を支援し、革新およびサービス開発プロジェクトを支援しました。"
+          "description": "戦略的ビジネス意思決定を支援するための広範な市場調査と競合業界分析を実施。実用的なビジネスインサイトのためのデータ収集、クリーニング、統合を支援。データ駆動型思考を実際の業務課題に応用し、革新およびサービス開発プロジェクトに貢献しました。"
+        },
+        {
+          "role": "ハッカソン トップ5 WorkOrbit",
+          "company": "Cardano Asia IBW 2025",
+          "year": "2025",
+          "description": "チームKERDSとともに、Cardano Hackathon Asia IBW 2025での30時間スプリントでWorkOrbitをゼロから構築。LLM、FastAPI、Kafka、IPFS、CardanoブロックチェーンのPlutusスマートコントラクトを統合した分散型AIワークフローエージェントを設計・実装。締め切り30分前に完全に機能するデモを提出し、トップ5入りを果たしました。"
+        },
+        {
+          "role": "Oracle認定 — AI＆データサイエンス",
+          "company": "オラクル大学",
+          "year": "2025",
+          "description": "OCI 2025 AI基礎アソシエイトとOCI 2025データサイエンスプロフェッショナルの2つのOracle Cloud Infrastructure認定を取得。クラウドAIアーキテクチャ、MLライフサイクル管理、MLOps、OCI上でのAIソリューションの本番環境デプロイにおけるエンタープライズレベルの専門知識を実証しています。"
+        },
+        {
+          "role": "ソロ開発者 — Talytoki",
+          "company": "個人プロジェクト",
+          "year": "2025",
+          "description": "没入型言語学習のためのAI搭載ブラウザ拡張機能Talytokiを設計・構築。ホバー辞書、JLPTタグ付き語彙保存、デュアル字幕、動画クリエイターとの会話を可能にするAIペルソナを搭載。自身のJLPT N5認定取得の旅に直接動機づけられたプロジェクトです。"
         }
       ]
     },
@@ -168,22 +326,28 @@
       "toolsLabel": "ツールと機能",
       "projects": [
         {
-          "name": "TalkyToki",
-          "category": "言語学習アプリケーション",
-          "tools": "AI, 拡張機能, ストリーミング統合",
-          "desc": "動画を見ながら言語を学習できるブラウザ拡張機能ベースの言語学習プラットフォーム。 クリエイターとのAIベースの会話を含みます。"
+          "name": "Talytoki",
+          "category": "AI · 言語学習 · ブラウザ拡張機能",
+          "tools": "React, AI/LLM, Chrome拡張機能, YouTube API, JLPT N5〜N1",
+          "desc": "没入型日本語学習のためのAI搭載ブラウザ拡張機能。ホバー辞書、JLPTタグ付き語彙保存、デュアル字幕、動画クリエイターとの会話を可能にするAIペルソナ — 動画を離れることなくすべてが完結します。"
         },
         {
-          "name": "Agentic PM System",
-          "category": "Cardano Asia IBW ハッカソン",
-          "tools": "AI, ブロックチェーン, スマートコントラクト",
-          "desc": "チームコラボレーションプロジェクトとして開発された、AIとブロックチェーン技術で構築されたAI対応プロジェクト管理ソリューション。"
+          "name": "株価予測",
+          "category": "データサイエンス · 時系列 · R",
+          "tools": "R, ARIMA, 移動平均, 指数平滑化, ggplot2",
+          "desc": "ARIMA、移動平均、指数平滑化モデルを使用したタタスチール株価の厳密な時系列予測。RMSEとMAEメトリクスで評価し、ARIMAが最も優れた短期予測モデルとして選出されました。"
         },
         {
-          "name": "ポートフォリオウェブサイト",
-          "category": "個人ポートフォリオ",
-          "tools": "React, GSAP, Three.js",
-          "desc": "技術的能力、職業経験、創造的なデザインスキルを示す個人のウェブサイト。"
+          "name": "Parallel Universe",
+          "category": "ブランドデザイン · ストリートウェア · クリエイティブディレクション",
+          "tools": "Adobe Illustrator, グラフィックデザイン, ブランドアイデンティティ, ビジュアルストーリーテリング",
+          "desc": "インドのストリートカルチャー、アニメ、JDMカーカルチャー、バスケットボール、スケートボードを融合した個人ストリートウェアブランドコンセプト。個人表現の着られるマニフェスト。"
+        },
+        {
+          "name": "WorkOrbit",
+          "category": "ハッカソン トップ5 · AI · ブロックチェーン",
+          "tools": "AI/LLM, Cardanoブロックチェーン, FastAPI, Kafka, IPFS, Plutusスマートコントラクト",
+          "desc": "30時間で構築したハッカソントップ5の分散型AIワークフローエージェント。会議STTによるタスク割り当て自動化、リアルタイム締め切り追跡、改ざん防止Plutusスマートコントラクトによるカルダノブロックチェーン上での完了検証。"
         }
       ]
     },
@@ -230,6 +394,120 @@
         "text2": "作成者：",
         "name": "Shubham Bhardwaj",
         "year": "2025"
+      }
+    },
+    "projectDetail": {
+      "backLabel": "ポートフォリオ",
+      "yearLabel": "年",
+      "roleLabel": "役割",
+      "statusLabel": "ステータス",
+      "moreProjects": "他のプロジェクト",
+      "closeLabel": "閉じる",
+      "clickToPlay": "クリックして再生",
+      "projects": {
+        "talytoki": {
+          "title": "Talytoki",
+          "subtitle": "没入型言語学習プラットフォーム",
+          "tag": "ブラウザ拡張機能 · AI · ストリーミング",
+          "role": "ソロ開発者",
+          "status": "公開中",
+          "linkLabel": "デモを見る",
+          "headings": [
+            {
+              "label": "問題点",
+              "content": "「分散した学習」の罠 — 日本語を学んでいる中で、同じ悩ましい壁に何度もぶつかりました。情報が散らばりすぎているのです。動画を見て、面白い単語を聞いて、動画を一時停止し、ノートを探したり辞書アプリを開いたりして意味を調べる。そして動画に戻る頃には、没入感が完全に壊れてしまっていました。"
+            },
+            {
+              "label": "ビジョン",
+              "content": "お気に入りの番組を見ながら、目を離したりノートを確認したりすることなく学習できたら？言語を理解するために必要なものがすべて画面上にあったら？それがまさに私がTalytokiを作った理由です。YouTubeやNetflixなどのストリーミングサイトから動画を見ながら、リアルタイムで新しい語彙や文法をシームレスに学習・保存できる、一元化されたプラットフォームです。"
+            },
+            {
+              "label": "主な機能",
+              "content": "ホバー辞書：デュアル字幕で視聴し、任意の単語にホバーすると意味・発音・文法が即座に表示されます。スマート語彙保存：動画から直接単語をクリックして保存。Talytokiは今後の動画でそれらを自動的にハイライトします。JLPTレベルタグ付け（N5〜N1）：保存した語彙を習熟度レベルで自動分類。アクティブ練習コントロール：特定の文をループ再生したり、各行の後に自動一時停止。「クリエイターと話す」AI：視聴後、内蔵AIがその動画のクリエイターのペルソナを採用してリアルタイム会話練習ができます。"
+            },
+            {
+              "label": "インパクト",
+              "content": "Talytokiは受動的な動画視聴を、能動的で没入型の言語習得体験に変えます。アプリ間のコンテキストスイッチを排除することで、学習者は言語定着に不可欠なフロー状態を維持できます。JLPTタグ付けシステムにより、学習者は常に優先すべきことを把握でき、N5からN1への道のりが体系的で達成可能に感じられます。"
+            }
+          ]
+        },
+        "stock-prediction": {
+          "title": "株価予測",
+          "subtitle": "時系列予測 — タタスチール",
+          "tag": "データサイエンス · 時系列 · R",
+          "role": "データサイエンティスト",
+          "status": "完了",
+          "linkLabel": "LinkedInで見る",
+          "headings": [
+            {
+              "label": "目標",
+              "content": "金融データソースからタタスチールの過去の株価データを収集する。データのクリーニング、前処理、探索的データ分析を実施する。時系列予測モデルを適用して株価の動きを分析する。過去のトレンドに基づいて将来の株価動向を予測する。"
+            },
+            {
+              "label": "使用モデル",
+              "content": "移動平均（MA）— 株価の短期的な変動を平滑化するため。自己回帰（AR）— 現在と過去の価格の関係をモデル化するため。ARIMA（自己回帰和分移動平均）— 将来の価格予測のメイン予測モデルとして使用。指数平滑化 — トレンドを捉え、予測精度を向上させるため。"
+            },
+            {
+              "label": "方法論",
+              "content": "このプロジェクトは厳密なデータサイエンスパイプラインに従いました。生の過去データを取得し、クリーニング・正規化した後、複数の競合モデルに投入しました。各モデルのパフォーマンスはRMSEとMAEメトリクスで評価され、ARIMAが短期予測ウィンドウで最も優れたパフォーマンスを示しました。"
+            },
+            {
+              "label": "最終目標",
+              "content": "過去データと統計的時系列技術を使用して、短期的な株価動向を予測できる予測モデルを構築する。このプロジェクトは、市場動向の分析と投資意思決定支援のための金融データ分析、予測モデル、Rプログラミングの応用を実証しています。"
+            }
+          ]
+        },
+        "parallel-universe": {
+          "title": "Parallel Universe",
+          "subtitle": "個人ストリートウェアブランドコンセプト",
+          "tag": "デザイン · ストリートウェア · ブランドアイデンティティ",
+          "role": "デザイナー＆クリエイティブディレクター",
+          "status": "進行中",
+          "headings": [
+            {
+              "label": "コンセプト",
+              "content": "Parallel Universeは、デザイン、創造性、ストリートカルチャーへの情熱から生まれた個人ブランドコンセプトです。いつか自分のブランドを作りたいと思っていた私にとって、このプロジェクトは自分の興味をビジュアルデザインに変えることでその夢を探求する機会となりました。"
+            },
+            {
+              "label": "インスピレーション",
+              "content": "このブランドはインドのストリートウェアカルチャーのエネルギーと、それが体現する創造的な自由に強くインスパイアされています。このプロジェクトを通じて、アニメ、JDMカーカルチャー、バスケットボール、スケートボードなど、私の個人的な興味を反映したグラフィックとコンセプトを実験しました。"
+            },
+            {
+              "label": "デザイン哲学",
+              "content": "単に服をデザインするのではなく、Parallel Universeの目標は、自分が愛するすべてのものが視覚的に共存できる空間を作ることでした。各デザインは私の個性と、私に影響を与えるカルチャーの一部を表しています — アイデンティティの着られるマニフェストです。"
+            },
+            {
+              "label": "成果",
+              "content": "このプロジェクトは趣味として始まりましたが、創造性を表現し、アート、ファッション、個人的な興味がどのように組み合わさってユニークなブランドアイデンティティを形成できるかを探求する方法にもなりました。構図、色彩理論、ビジュアルストーリーテリングへの目を磨きました。"
+            }
+          ]
+        },
+        "workorbit": {
+          "title": "WorkOrbit",
+          "subtitle": "分散型AIワークフローエージェント",
+          "tag": "AI · ブロックチェーン · Cardano · ハッカソン",
+          "role": "フルスタック開発者",
+          "status": "ハッカソン トップ5",
+          "linkLabel": "デモを見る",
+          "headings": [
+            {
+              "label": "問題点",
+              "content": "現代のチームコラボレーションは機能不全に陥っています。多くのチームが非効率なタスク追跡、不十分な締め切り管理、透明性のある説明責任の欠如に苦しんでいます。既存のWeb2プロジェクト管理ツールには、高リスクなコラボレーションに必要な信頼性、追跡可能性、改ざん防止記録が欠けています。"
+            },
+            {
+              "label": "ソリューション",
+              "content": "WorkOrbitは、タスク割り当てを自動化し、リアルタイムで締め切りを追跡し、タスク完了を検証する分散型AIワークフローエージェントです。AI自動化とCardanoブロックチェーンを統合することで、究極のチーム説明責任のための完全に監査可能な改ざん防止システムを作成しました。主な機能：会議STT-to-Action（AIが会議中に聞いてロールベースのタスクを即座に作成）、インテリジェントタスク割り当て、AI搭載検証、CardanoのImmutable Trust Layer。"
+            },
+            {
+              "label": "技術アーキテクチャ",
+              "content": "フロントエンド：React/Flutterダッシュボード。バックエンド＆APIゲートウェイ：複雑なエージェントエンドポイント用FastAPI。AIエージェントエンジン：推論とスケジューリングのためのLLM＋タスクマネージャー。ミドルウェア：リアルタイムイベントキューイングのためのKafkaとRedisを使用したNode.js/Pythonプロセッサ。データストレージ（Web3）：IPFSの暗号化ペイロード；CardanoブロックチェーンのPlutusスマートコントラクトで管理される重要な状態変更。"
+            },
+            {
+              "label": "ハッカソンの試練",
+              "content": "チームKERDSとともに、Cardano Hackathon Asia IBW 2025での過酷な30時間スプリントでゼロから構築しました。「コールドスタート」のハンデ（準備ゼロ）、複雑なAPIオーケストレーションの課題、初めてのWeb3統合 — すべてを深刻な睡眠不足と戦いながら乗り越えました。締め切りの30分前に最終提出を完了しました。"
+            }
+          ]
+        }
       }
     }
   }
