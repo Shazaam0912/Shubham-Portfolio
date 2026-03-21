@@ -1,12 +1,12 @@
 {
   "en": {
     "navbar": {
-      "logo": "Logo",
+      "logo": "SB",
       "email": "shubhambdj04@gmail.com",
       "links": [
         { "text": "ABOUT", "href": "#about" },
         { "text": "WORK", "href": "#work" },
-        { "text": "PROJECTS", "href": "#projects" },
+        { "text": "PROJECTS", "href": "/projects/talytoki" },
         { "text": "CONTACT", "href": "#contact" }
       ]
     },
@@ -19,7 +19,7 @@
     },
     "about": {
       "title": "About Me",
-      "description": "I am a 21-year-old developer and data enthusiast based in Bangalore, India, with a BBA in Data & Finance from St. Joseph's University. I combine a strong business foundation with technical expertise in AI, Data Science, and software development to build innovative solutions like AI-powered platforms and language learning tools."
+      "description": "I am a 21-year-old developer and data enthusiast based in Bangalore, India, with a BBA in Data & Finance from St. Joseph's University. I combine a strong business foundation with technical expertise in AI, Data Science, and software development to build innovative solutions like AI-powered platforms and language learning tools. I am currently learning Japanese and hold a JLPT N5 certification, and I am actively preparing for the JLPT N3 (Japanese Language Proficiency Test) in 2026."
     },
     "career": {
       "title1": "My career",
@@ -57,10 +57,10 @@
           "description": "Earned dual Oracle Cloud Infrastructure certifications: OCI 2025 AI Foundations Associate and OCI 2025 Data Science Professional. Demonstrates enterprise-level expertise in cloud AI architecture, ML lifecycle management, MLOps, and production deployment of AI solutions on OCI."
         },
         {
-          "role": "Solo Developer Talytoki",
+          "role": "Solo Developer Talkytoki",
           "company": "Independent Project",
           "year": "2025",
-          "description": "Designed and built Talytoki — an AI-powered browser extension for immersive language learning. Features hover-to-learn dictionary, JLPT-tagged vocabulary saving, dual subtitles, and an AI persona that lets users converse with video creators. Directly motivated by my own JLPT N5 certification journey."
+          "description": "Designed and built Talkytoki — an AI-powered browser extension for immersive language learning. Features hover-to-learn dictionary, JLPT-tagged vocabulary saving, dual subtitles, and an AI persona that lets users converse with video creators. Directly motivated by my own JLPT N5 certification journey."
         }
       ]
     },
@@ -70,7 +70,7 @@
       "toolsLabel": "Tools and features",
       "projects": [
         {
-          "name": "Talytoki",
+          "name": "Talkytoki",
           "category": "AI · Language Learning · Browser Extension",
           "tools": "React, AI/LLM, Chrome Extension, YouTube API, JLPT N5–N1",
           "desc": "AI-powered browser extension for immersive Japanese learning. Hover-to-learn dictionary, JLPT-tagged vocabulary saving, dual subtitles, and an AI persona that lets you converse with video creators — all without leaving the video."
@@ -92,6 +92,12 @@
           "category": "Hackathon Winner · AI · Blockchain",
           "tools": "AI/LLM, Cardano Blockchain, FastAPI, Kafka, IPFS, Plutus Smart Contracts",
           "desc": "Hackathon-winning decentralized AI workflow agent built in 30 hours. Automates task assignments via meeting STT, tracks deadlines in real-time, and verifies completion on the Cardano blockchain with tamper-proof Plutus smart contracts."
+        },
+        {
+          "name": "Smart Home Assistive System",
+          "category": "IoT · Computer Vision · AI · Assistive Tech",
+          "tools": "ESP32, OpenCV, MediaPipe, Python, Relay Modules, Voice AI, Custom PCB",
+          "desc": "Published research: an assistive smart home system enabling individuals with cerebral palsy and muscular dystrophy to control appliances via hand gestures, virtual mouse, and voice commands — using an ESP32 IoT backbone with smart energy management."
         }
       ]
     },
@@ -128,10 +134,9 @@
       "phone": "+91 78924 91109",
       "socialLabel": "Social",
       "socials": [
-        { "name": "Github", "url": "https://github.com" },
-        { "name": "Linkedin", "url": "https://www.linkedin.com" },
-        { "name": "Twitter", "url": "https://x.com" },
-        { "name": "Instagram", "url": "https://www.instagram.com" }
+        { "name": "Github", "url": "https://github.com/Shazaam0912" },
+        { "name": "Linkedin", "url": "https://www.linkedin.com/in/shubham-bhardwaj-730946256" },
+        { "name": "Instagram", "url": "https://www.instagram.com/shazaamm_/" }
       ],
       "footer": {
         "text1": "Designed and Developed",
@@ -150,7 +155,7 @@
       "clickToPlay": "Click to play",
       "projects": {
         "talytoki": {
-          "title": "Talytoki",
+          "title": "Talkytoki",
           "subtitle": "Immersive Language Learning Platform",
           "tag": "Browser Extension · AI · Streaming",
           "role": "Solo Developer",
@@ -163,15 +168,15 @@
             },
             {
               "label": "The Vision",
-              "content": "Imagine if you could learn while watching your favorite shows, without ever needing to look away or check your notes. What if everything you needed to understand the language was right there on the screen? That's exactly why I built Talytoki — a single, centralized platform where you can watch videos from YouTube, Netflix, and other streaming sites, while seamlessly learning and saving new vocabulary and grammar in real-time."
+              "content": "Imagine if you could learn while watching your favorite shows, without ever needing to look away or check your notes. What if everything you needed to understand the language was right there on the screen? That's exactly why I built Talkytoki — a single, centralized platform where you can watch videos from YouTube, Netflix, and other streaming sites, while seamlessly learning and saving new vocabulary and grammar in real-time."
             },
             {
               "label": "Core Features",
-              "content": "Hover-to-Learn Dictionary: Watch with dual subtitles — hover over any word to instantly see meaning, pronunciation, and grammar. Smart Vocabulary Saving: Click to save words directly from the video; Talytoki highlights them automatically in future videos. JLPT Level Tagging (N5–N1): Automatically categorizes saved vocabulary by proficiency level. Active Practice Controls: Loop specific sentences or auto-pause after every line. 'Talk to the Creator' AI: After watching, a built-in AI adopts the persona of that video's creator for real-time conversation practice."
+              "content": "Hover-to-Learn Dictionary: Watch with dual subtitles — hover over any word to instantly see meaning, pronunciation, and grammar. Smart Vocabulary Saving: Click to save words directly from the video; Talkytoki highlights them automatically in future videos. JLPT Level Tagging (N5–N1): Automatically categorizes saved vocabulary by proficiency level. Active Practice Controls: Loop specific sentences or auto-pause after every line. 'Talk to the Creator' AI: After watching, a built-in AI adopts the persona of that video's creator for real-time conversation practice."
             },
             {
               "label": "Impact",
-              "content": "Talytoki transforms passive video watching into an active, immersive language acquisition experience. By eliminating the need to context-switch between apps, learners stay in the flow state that is critical for language retention. The JLPT tagging system ensures learners always know what to prioritize, making the path from N5 to N1 feel structured and achievable."
+              "content": "Talkytoki transforms passive video watching into an active, immersive language acquisition experience. By eliminating the need to context-switch between apps, learners stay in the flow state that is critical for language retention. The JLPT tagging system ensures learners always know what to prioritize, making the path from N5 to N1 feel structured and achievable."
             }
           ]
         },
@@ -251,18 +256,44 @@
               "content": "Built from scratch in a grueling 30-hour sprint at Cardano Hackathon Asia IBW 2025 with Team KERDS. We faced a 'cold start' disadvantage (zero preparation), complex API orchestration challenges, and first-time Web3 integration — all while battling severe sleep deprivation. We pushed our final submission just 30 minutes before the deadline."
             }
           ]
+        },
+        "smart-home": {
+          "title": "Smart Home Assistive System",
+          "subtitle": "IoT & AI for Accessibility — Published Research",
+          "tag": "IoT · Computer Vision · AI · Assistive Tech",
+          "role": "Researcher & Developer",
+          "status": "Published",
+          "linkLabel": "Watch Demo",
+          "headings": [
+            {
+              "label": "Overview",
+              "content": "A published research project presenting a smart home support system designed to enable individuals with cerebral palsy and muscular dystrophy to perform daily tasks independently. The system integrates voice commands, hand gesture recognition, and a virtual mouse interface — all without requiring physical contact with any device."
+            },
+            {
+              "label": "Interaction Modes",
+              "content": "Three seamless input modalities: (1) Hand Gesture Control — real-time camera-based gesture detection using OpenCV & MediaPipe to move the cursor and perform click actions. (2) Virtual Mouse Interface — index finger tracking translates to pointer movement; pinch gestures trigger clicks, drags, and scrolls. (3) Voice-Activated AI Assistant — continuously listens for spoken commands to open apps, control devices, and perform tasks without physical input."
+            },
+            {
+              "label": "System Architecture",
+              "content": "Hardware: ESP32 microcontroller with built-in Wi-Fi/Bluetooth receives wireless commands and sends 3.3V GPIO signals to relay modules, which safely switch mains-powered appliances (lights, fans, heaters). A custom PCB integrates all components into a compact, stable unit powered by a 5V 2A adapter. Software: Python-based gesture pipeline (OpenCV + MediaPipe) + a software-only smart energy management module that tracks appliance usage durations and auto-shuts off devices after preset thresholds — no external sensors needed."
+            },
+            {
+              "label": "Key Outcomes",
+              "content": "Experimental results demonstrated high gesture recognition accuracy, low latency, and reliable operation in both lab and home environments. The integrated smart energy system achieved up to a 20% reduction in power consumption. The system meaningfully restores daily autonomy for motor-impaired users, reduces physical and emotional burden on caregivers, and offers a cost-effective, open, and modular design suitable for rehabilitation centers and assisted living facilities."
+            }
+          ]
         }
       }
     }
   },
   "ja": {
     "navbar": {
-      "logo": "Logo",
+      "logo": "SB",
       "email": "shubhambdj04@gmail.com",
       "links": [
         { "text": "アバウト", "href": "#about" },
         { "text": "ワーク", "href": "#work" },
-        { "text": "プロジェクト", "href": "#projects" },
+        { "text": "プロジェクト", "href": "/projects/talytoki" },
         { "text": "コンタクト", "href": "#contact" }
       ]
     },
@@ -275,7 +306,7 @@
     },
     "about": {
       "title": "私について",
-      "description": "私はインドのバンガロールを拠点とする21歳の開発者兼データ愛好家で、セントジョセフ大学でデータと金融のBBAを取得しています。 強力なビジネス基盤と、AI、データサイエンス、ソフトウェア開発の技術的専門知識を組み合わせて、AIを活用したプラットフォームや言語学習ツールなどの革新的なソリューションを構築しています。"
+      "description": "私はインドのバンガロールを拠点とする21歳の開発者兼データ愛好家で、セントジョセフ大学でデータと金融の経営管理学学士（BBA）を取得しています。 強力なビジネス基盤と、AI、データサイエンス、ソフトウェア開発の技術的専門知識を組み合わせて、AIを活用したプラットフォームや言語学習ツールなどの革新的なソリューションを構築しています。現在日本語を勉強しており、JLPT N5の資格を取得しています。2026年にはJLPT N3（日本語能力試験）の取得を目指して準備を進めています。"
     },
     "career": {
       "title1": "キャリア",
@@ -283,7 +314,7 @@
       "title3": "経験",
       "timeline": [
         {
-          "role": "BBA データ＆ファイナンス",
+          "role": "経営管理学学士 データ＆ファイナンス",
           "company": "セントジョセフ大学",
           "year": "2022–2025",
           "description": "データ＆ファイナンス専攻で卒業。大学認定のデータサイエンス＆アナリティクスコースを修了（Bグレード、3単位）。ビジネス管理、統計分析、財務モデリングの強固な基盤を構築しながら、AI、機械学習、ソフトウェア開発を積極的に探求しました。"
@@ -313,10 +344,10 @@
           "description": "OCI 2025 AI基礎アソシエイトとOCI 2025データサイエンスプロフェッショナルの2つのOracle Cloud Infrastructure認定を取得。クラウドAIアーキテクチャ、MLライフサイクル管理、MLOps、OCI上でのAIソリューションの本番環境デプロイにおけるエンタープライズレベルの専門知識を実証しています。"
         },
         {
-          "role": "ソロ開発者 — Talytoki",
+          "role": "ソロ開発者 — Talkytoki",
           "company": "個人プロジェクト",
           "year": "2025",
-          "description": "没入型言語学習のためのAI搭載ブラウザ拡張機能Talytokiを設計・構築。ホバー辞書、JLPTタグ付き語彙保存、デュアル字幕、動画クリエイターとの会話を可能にするAIペルソナを搭載。自身のJLPT N5認定取得の旅に直接動機づけられたプロジェクトです。"
+          "description": "没入型言語学習のためのAI搭載ブラウザ拡張機能Talkytokiを設計・構築。ホバー辞書、JLPTタグ付き語彙保存、デュアル字幕、動画クリエイターとの会話を可能にするAIペルソナを搭載。自身のJLPT N5認定取得の旅に直接動機づけられたプロジェクトです。"
         }
       ]
     },
@@ -326,7 +357,7 @@
       "toolsLabel": "ツールと機能",
       "projects": [
         {
-          "name": "Talytoki",
+          "name": "Talkytoki",
           "category": "AI · 言語学習 · ブラウザ拡張機能",
           "tools": "React, AI/LLM, Chrome拡張機能, YouTube API, JLPT N5〜N1",
           "desc": "没入型日本語学習のためのAI搭載ブラウザ拡張機能。ホバー辞書、JLPTタグ付き語彙保存、デュアル字幕、動画クリエイターとの会話を可能にするAIペルソナ — 動画を離れることなくすべてが完結します。"
@@ -348,6 +379,12 @@
           "category": "ハッカソン トップ5 · AI · ブロックチェーン",
           "tools": "AI/LLM, Cardanoブロックチェーン, FastAPI, Kafka, IPFS, Plutusスマートコントラクト",
           "desc": "30時間で構築したハッカソントップ5の分散型AIワークフローエージェント。会議STTによるタスク割り当て自動化、リアルタイム締め切り追跡、改ざん防止Plutusスマートコントラクトによるカルダノブロックチェーン上での完了検証。"
+        },
+        {
+          "name": "スマートホーム支援システム",
+          "category": "IoT · コンピュータービジョン · AI · 支援技術",
+          "tools": "ESP32, OpenCV, MediaPipe, Python, リレーモジュール, 音声AI, カスタムPCB",
+          "desc": "発表済み研究：脳性麻痺・筋ジストロフィー患者がハンドジェスチャー、バーチャルマウス、音声コマンドで家電を操作できる支援スマートホームシステム。ESP32 IoTバックボーンとスマートエネルギー管理を搭載。"
         }
       ]
     },
@@ -384,10 +421,9 @@
       "phone": "+91 78924 91109",
       "socialLabel": "ソーシャル",
       "socials": [
-        { "name": "Github", "url": "https://github.com" },
-        { "name": "Linkedin", "url": "https://www.linkedin.com" },
-        { "name": "Twitter", "url": "https://x.com" },
-        { "name": "Instagram", "url": "https://www.instagram.com" }
+        { "name": "Github", "url": "https://github.com/Shazaam0912" },
+        { "name": "Linkedin", "url": "https://www.linkedin.com/in/shubham-bhardwaj-730946256" },
+        { "name": "Instagram", "url": "https://www.instagram.com/shazaamm_/" }
       ],
       "footer": {
         "text1": "デザイン・開発",
@@ -406,7 +442,7 @@
       "clickToPlay": "クリックして再生",
       "projects": {
         "talytoki": {
-          "title": "Talytoki",
+          "title": "Talkytoki",
           "subtitle": "没入型言語学習プラットフォーム",
           "tag": "ブラウザ拡張機能 · AI · ストリーミング",
           "role": "ソロ開発者",
@@ -505,6 +541,32 @@
             {
               "label": "ハッカソンの試練",
               "content": "チームKERDSとともに、Cardano Hackathon Asia IBW 2025での過酷な30時間スプリントでゼロから構築しました。「コールドスタート」のハンデ（準備ゼロ）、複雑なAPIオーケストレーションの課題、初めてのWeb3統合 — すべてを深刻な睡眠不足と戦いながら乗り越えました。締め切りの30分前に最終提出を完了しました。"
+            }
+          ]
+        },
+        "smart-home": {
+          "title": "スマートホーム支援システム",
+          "subtitle": "IoT＆AIによるアクセシビリティ — 発表済み研究",
+          "tag": "IoT · コンピュータービジョン · AI · 支援技術",
+          "role": "研究者＆開発者",
+          "status": "発表済み",
+          "linkLabel": "デモを見る",
+          "headings": [
+            {
+              "label": "概要",
+              "content": "脳性麻痺・筋ジストロフィー患者が日常作業を自立して行えるよう設計されたスマートホーム支援システムの発表済み研究。音声コマンド、ハンドジェスチャー認識、バーチャルマウスインターフェースを統合し、いかなるデバイスへの物理的接触も不要。"
+            },
+            {
+              "label": "インタラクションモード",
+              "content": "3つのシームレスな入力モダリティ：(1) ハンドジェスチャー制御 — OpenCV＆MediaPipeを使用したリアルタイムカメラベースのジェスチャー検出でカーソル移動とクリック操作。(2) バーチャルマウス — 人差し指追跡でポインター移動、ピンチジェスチャーでクリック・ドラッグ・スクロール。(3) 音声AIアシスタント — 音声コマンドを継続的に聞いてアプリ起動・デバイス制御・タスク実行。"
+            },
+            {
+              "label": "システムアーキテクチャ",
+              "content": "ハードウェア：ESP32マイコンがWi-Fi/Bluetoothで無線コマンドを受信し、3.3V GPIO信号をリレーモジュールに送信して家庭用電化製品（照明・ファン・暖房）を制御。カスタムPCBがすべてのコンポーネントをコンパクトで安定したユニットに統合（5V 2A電源）。ソフトウェア：Pythonベースのジェスチャーパイプライン（OpenCV＋MediaPipe）＋電力使用量を追跡し所定の閾値後に自動オフするソフトウェアのみのスマートエネルギー管理モジュール。"
+            },
+            {
+              "label": "主な成果",
+              "content": "実験結果は高いジェスチャー認識精度、低遅延、ラボと家庭環境での確実な動作を実証。統合スマートエネルギーシステムで最大20%の電力消費削減を達成。運動障害ユーザーの日常的な自律性を有意義に回復させ、介護者の身体的・精神的負担を軽減。リハビリセンターや介護施設への展開に適したコスト効果の高いオープンなモジュラー設計。"
             }
           ]
         }

@@ -25,4 +25,4 @@ dist-ssr
 .npmrc
 
 backup/
-.env
+.env*2.36.22*.mov

@@ -10,7 +10,7 @@ import { MdArrowOutward } from "react-icons/md";
 gsap.registerPlugin(ScrollTrigger);
 
 // Map project index to route id
-const PROJECT_IDS = ["talytoki", "stock-prediction", "parallel-universe", "workorbit"];
+const PROJECT_IDS = ["talytoki", "stock-prediction", "parallel-universe", "workorbit", "smart-home"];
 
 // Thumbnail images per project
 const PROJECT_THUMBS: Record<string, string> = {
@@ -18,6 +18,7 @@ const PROJECT_THUMBS: Record<string, string> = {
   "stock-prediction": "/Projects/stock-prediction-R/1.png",
   "parallel-universe": "/Projects/Parallel%20Universe/FRONT.png",
   workorbit: "/Projects/cordona-hackathon/IBW.jpeg",
+  "smart-home": "https://img.youtube.com/vi/oWgJ38PCQ0Y/maxresdefault.jpg",
 };
 
 const Work = () => {

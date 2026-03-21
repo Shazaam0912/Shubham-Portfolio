@@ -6,6 +6,7 @@ const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const Certifications = lazy(() => import("./pages/Certifications"));
+const Gallery = lazy(() => import("./pages/Gallery"));
 import { LoadingProvider } from "./context/LoadingProvider";
 import { LanguageProvider } from "./context/LanguageProvider";
 
@@ -32,9 +33,11 @@ const App = () => {
         <Route
           path="/projects/:id"
           element={
-            <Suspense fallback={<div style={{ background: "#0b080c", minHeight: "100vh" }} />}>
-              <ProjectDetail />
-            </Suspense>
+            <LanguageProvider>
+              <Suspense fallback={<div style={{ background: "#0b080c", minHeight: "100vh" }} />}>
+                <ProjectDetail />
+              </Suspense>
+            </LanguageProvider>
           }
         />
         {/* Certifications page */}
@@ -44,6 +47,17 @@ const App = () => {
             <LanguageProvider>
               <Suspense fallback={<div style={{ background: "#0b080c", minHeight: "100vh" }} />}>
                 <Certifications />
+              </Suspense>
+            </LanguageProvider>
+          }
+        />
+        {/* Gallery mood board */}
+        <Route
+          path="/gallery"
+          element={
+            <LanguageProvider>
+              <Suspense fallback={<div style={{ background: "#0b080c", minHeight: "100vh" }} />}>
+                <Gallery />
               </Suspense>
             </LanguageProvider>
           }

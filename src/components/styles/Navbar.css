@@ -30,12 +30,19 @@
   font-weight: 600;
   cursor: pointer;
 }
-.navbar-connect {
+.navbar-center-group {
   position: absolute;
-  display: none;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 100;
+}
+
+.navbar-connect {
+  display: none;
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 500;
@@ -44,6 +51,25 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+}
+
+.navbar-lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  pointer-events: auto;
+  transition: all 0.2s;
+}
+
+.navbar-lang-btn:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 /* Certifications button — replaces logo placeholder */

@@ -29,34 +29,65 @@ const Navbar = () => {
     s.scrollTop(0);
     s.paused(true);
 
-    const links = document.querySelectorAll(".header ul a");
-    links.forEach((elem) => {
-      const element = elem as HTMLAnchorElement;
-      element.addEventListener("click", (e) => {
-        if (window.innerWidth > 1024) {
-          e.preventDefault();
-          const elem = e.currentTarget as HTMLAnchorElement;
-          const section = elem.getAttribute("data-href");
-          smoother.scrollTo(section, true, "top top");
-        }
-      });
-    });
-    window.addEventListener("resize", () => {
+    const handleResize = () => {
       ScrollSmoother.refresh(true);
-    });
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+
+    if (href.startsWith("/")) {
+      navigate(href);
+      return;
+    }
+
+    if (window.location.pathname !== "/") {
+      navigate("/" + href);
+      setTimeout(() => {
+        const el = document.querySelector(href);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 500);
+      return;
+    }
+    
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    if (window.innerWidth > 1024 && smoother) {
+      smoother.scrollTo(href, true, "top top");
+    } else {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="header">
-        <button
-          className="navbar-certs-btn"
-          onClick={() => navigate("/certifications")}
-          data-cursor="disable"
-        >
-          <span className="navbar-certs-icon">✦</span>
-          {language === "en" ? "Certifications" : "資格"}
-        </button>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+          <button
+            className="navbar-certs-btn"
+            onClick={() => navigate("/certifications")}
+            data-cursor="disable"
+          >
+            <span className="navbar-certs-icon">✦</span>
+            {language === "en" ? "Certifications" : "資格"}
+          </button>
+          <button
+            className="navbar-certs-btn"
+            onClick={() => navigate("/gallery")}
+            data-cursor="disable"
+          >
+            <span className="navbar-certs-icon">◈</span>
+            {language === "en" ? "Gallery" : "ギャラリー"}
+          </button>
+        </div>
+        <div className="navbar-center-group">
           <a
             href={`mailto:${data.navbar.email}`}
             className="navbar-connect"
@@ -65,18 +96,8 @@ const Navbar = () => {
             {data.navbar.email}
           </a>
           <button
+            className="navbar-lang-btn"
             onClick={() => setLanguage(language === "en" ? "ja" : "en")}
-            style={{
-              background: 'transparent',
-              border: '1px solid white',
-              color: 'white',
-              padding: '4px 8px',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '14px',
-              zIndex: 100,
-              pointerEvents: 'auto'
-            }}
             data-cursor="disable"
           >
             {language === "en" ? "JA" : "EN"}
@@ -85,7 +106,11 @@ const Navbar = () => {
         <ul>
           {data.navbar.links.map((link, index) => (
             <li key={index}>
-              <a data-href={link.href} href={link.href}>
+              <a 
+                data-href={link.href} 
+                href={link.href}
+                onClick={(e) => handleLinkClick(e, link.href)}
+              >
                 <HoverLinks text={link.text} />
               </a>
             </li>

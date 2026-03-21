@@ -25,10 +25,10 @@ const PROJECTS: ProjectSection[] = [
   {
     id: "talytoki",
     index: 1,
-    title: "Talytoki",
+    title: "Talkytoki",
     subtitle: "Immersive Language Learning",
     tag: "Browser Extension · AI · Streaming",
-    year: "2024",
+    year: "2025",
     mediaType: "youtube",
     youtubeId: "WdSx_qvylQU",
     accentColor: "#c2a4ff",
@@ -43,17 +43,17 @@ const PROJECTS: ProjectSection[] = [
       {
         label: "The Vision",
         content:
-          "Imagine if you could learn while watching your favorite shows, without ever needing to look away or check your notes. What if everything you needed to understand the language was right there on the screen? That's exactly why I built Talytoki — a single, centralized platform where you can watch videos from YouTube, Netflix, and other streaming sites, while seamlessly learning and saving new vocabulary and grammar in real-time.",
+          "Imagine if you could learn while watching your favorite shows, without ever needing to look away or check your notes. What if everything you needed to understand the language was right there on the screen? That's exactly why I built Talkytoki — a single, centralized platform where you can watch videos from YouTube, Netflix, and other streaming sites, while seamlessly learning and saving new vocabulary and grammar in real-time.",
       },
       {
         label: "Core Features",
         content:
-          "Hover-to-Learn Dictionary: Watch with dual subtitles — hover over any word to instantly see meaning, pronunciation, and grammar. Smart Vocabulary Saving: Click to save words directly from the video; Talytoki highlights them automatically in future videos. JLPT Level Tagging (N5–N1): Automatically categorizes saved vocabulary by proficiency level. Active Practice Controls: Loop specific sentences or auto-pause after every line. 'Talk to the Creator' AI: After watching, a built-in AI adopts the persona of that video's creator for real-time conversation practice.",
+          "Hover-to-Learn Dictionary: Watch with dual subtitles — hover over any word to instantly see meaning, pronunciation, and grammar. Smart Vocabulary Saving: Click to save words directly from the video; Talkytoki highlights them automatically in future videos. JLPT Level Tagging (N5–N1): Automatically categorizes saved vocabulary by proficiency level. Active Practice Controls: Loop specific sentences or auto-pause after every line. 'Talk to the Creator' AI: After watching, a built-in AI adopts the persona of that video's creator for real-time conversation practice.",
       },
       {
         label: "Impact",
         content:
-          "Talytoki transforms passive video watching into an active, immersive language acquisition experience. By eliminating the need to context-switch between apps, learners stay in the flow state that is critical for language retention. The JLPT tagging system ensures learners always know what to prioritize, making the path from N5 to N1 feel structured and achievable.",
+          "Talkytoki transforms passive video watching into an active, immersive language acquisition experience. By eliminating the need to context-switch between apps, learners stay in the flow state that is critical for language retention. The JLPT tagging system ensures learners always know what to prioritize, making the path from N5 to N1 feel structured and achievable.",
       },
     ],
   },
@@ -176,6 +176,41 @@ const PROJECTS: ProjectSection[] = [
         label: "The Hackathon Crucible",
         content:
           "Built from scratch in a grueling 30-hour sprint at Cardano Hackathon Asia IBW 2025 with Team KERDS. We faced a 'cold start' disadvantage (zero preparation), complex API orchestration challenges, and first-time Web3 integration — all while battling severe sleep deprivation. We pushed our final submission just 30 minutes before the deadline.",
+      },
+    ],
+  },
+  {
+    id: "smart-home",
+    index: 5,
+    title: "Smart Home Assistive System",
+    subtitle: "IoT & AI for Accessibility — Published Research",
+    tag: "IoT · Computer Vision · AI · Assistive Tech",
+    year: "2025",
+    mediaType: "youtube",
+    youtubeId: "oWgJ38PCQ0Y",
+    accentColor: "#a78bfa",
+    link: "https://youtu.be/oWgJ38PCQ0Y?si=_NIhqtgjokih7GYK",
+    linkLabel: "Watch Demo",
+    headings: [
+      {
+        label: "Overview",
+        content:
+          "A published research project presenting a smart home support system designed to enable individuals with cerebral palsy and muscular dystrophy to perform daily tasks independently. The system integrates voice commands, hand gesture recognition, and a virtual mouse interface — all without requiring physical contact with any device.",
+      },
+      {
+        label: "Interaction Modes",
+        content:
+          "Three seamless input modalities: (1) Hand Gesture Control — real-time camera-based gesture detection using OpenCV & MediaPipe to move the cursor and perform click actions. (2) Virtual Mouse Interface — index finger tracking translates to pointer movement; pinch gestures trigger clicks, drags, and scrolls. (3) Voice-Activated AI Assistant — continuously listens for spoken commands to open apps, control devices, and perform tasks without physical input.",
+      },
+      {
+        label: "System Architecture",
+        content:
+          "Hardware: ESP32 microcontroller with built-in Wi-Fi/Bluetooth receives wireless commands and sends 3.3V GPIO signals to relay modules, which safely switch mains-powered appliances (lights, fans, heaters). A custom PCB integrates all components into a compact, stable unit powered by a 5V 2A adapter. Software: Python-based gesture pipeline (OpenCV + MediaPipe) + a software-only smart energy management module that tracks appliance usage durations and auto-shuts off devices after preset thresholds — no external sensors needed.",
+      },
+      {
+        label: "Key Outcomes",
+        content:
+          "Experimental results demonstrated high gesture recognition accuracy, low latency, and reliable operation in both lab and home environments. The integrated smart energy system achieved up to a 20% reduction in power consumption. The system meaningfully restores daily autonomy for motor-impaired users, reduces physical and emotional burden on caregivers, and offers a cost-effective, open, and modular design suitable for rehabilitation centers and assisted living facilities.",
       },
     ],
   },
