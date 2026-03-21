@@ -90,7 +90,7 @@ const PinLightbox = ({
         </button>
         <div className="hb-lightbox-img-wrap" style={{ boxShadow: `0 0 80px ${cat.color}22` }}>
           {pin.isVideo && pin.video ? (
-            <video src={pin.video} controls className="hb-lightbox-img" style={{ background: "#000" }} />
+            <video src={pin.video} autoPlay controls className="hb-lightbox-img" style={{ background: "#000" }} />
           ) : (
             <img src={pin.image} alt="Hobby media" className="hb-lightbox-img" />
           )}
@@ -132,7 +132,7 @@ const PinCard = ({
             <video
               src={pin.video}
               autoPlay
-              muted={!pin.video.toLowerCase().includes("yume")}
+              muted
               loop
               playsInline
               className="hb-pin-img"
