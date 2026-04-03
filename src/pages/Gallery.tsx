@@ -47,7 +47,8 @@ const PINS: HobbyPin[] = [
   { id: "v19", category: "videos", image: "", video: "/pinterestg/ind.mov", isVideo: true, span: "video" },
   { id: "p20", category: "photos", image: "/pinterestg/kyoto.jpg", span: "wide" },
   { id: "v21", category: "videos", image: "", video: "/pinterestg/yume%20torou.mp4", isVideo: true, span: "video" },
-  { id: "p22", category: "photos", image: "/pinterestg/yumi+arai.webp", span: "tall" }
+  { id: "p22", category: "photos", image: "/pinterestg/yumi+arai.webp", span: "tall" },
+  { id: "v23", category: "videos", image: "", video: "/pinterestg/com.mov", isVideo: true, span: "video" }
 ];
 
 // ─── Lightbox ─────────────────────────────────────────────────────────────────
